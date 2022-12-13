@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 public class FirstUniqChar {
     public int firstUniqChar(String s) {
             int res = Integer.MAX_VALUE;

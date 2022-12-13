@@ -17,9 +17,7 @@ public class SingleNonDuplicate {
             }
 
         }
-
-
-
+        
         return nums[high];
     }
 }

@@ -1,3 +1,7 @@
+//Given a string s, find the first non-repeating character in it and return its index.
+// If it does not exist, return -1.
+
+//time complexity: O(n),space complexity: O(1)
 public class FirstUniqChar {
     public int firstUniqChar(String s) {
             int res = Integer.MAX_VALUE;

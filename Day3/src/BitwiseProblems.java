@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class BitwiseProblems {
     //count the number of bits in a number with a value of 1
     //time complexity: O(1),space complexity: O(1)

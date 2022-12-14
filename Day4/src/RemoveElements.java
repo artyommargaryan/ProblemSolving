@@ -23,13 +23,14 @@ public class RemoveElements {
             return null;
         }
 
-        while (current.next != null){
-            if (current.next.val == val){
+        while (current.next != null) {
+            if (current.next.val == val) {
                 current.next = current.next.next;
-            } else{
+            } else {
                 current = current.next;
             }
         }
 
-        return head;    }
+        return head;
+    }
 }

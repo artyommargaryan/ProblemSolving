@@ -4,6 +4,27 @@
 
 // time complexity: O(n), space complexity: O(1)
 
+/**
+ * Definition for singly-linked list.
+    public class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+            next = null;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+*/
+
 public class GetIntersectionNode {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode currentA = headA;
@@ -22,15 +43,18 @@ public class GetIntersectionNode {
             currentB = currentB.next;
         }
 
+        int sizeDif;
         currentA = headA;
         currentB = headB;
 
         if (sizeA > sizeB) {
-            for (int i = 0; i < sizeA - sizeB; ++i) {
+            sizeDif = sizeA - sizeB;
+            for (int i = 0; i < sizeDif; ++i) {
                 currentA = currentA.next;
             }
         } else {
-            for (int i = 0; i < sizeB - sizeA; ++i) {
+            sizeDif = sizeB - sizeA;
+            for (int i = 0; i < sizeDif; ++i) {
                 currentB = currentB.next;
             }
         }

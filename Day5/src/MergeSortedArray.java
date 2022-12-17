@@ -5,7 +5,7 @@
 // array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the
 // elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
-// time complexity: O(n), space complexity: O(1)
+// time complexity: O(n + m), space complexity: O(1)
 
 public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
